@@ -25,6 +25,30 @@ app.get('/about',(req,res)=>{
     res.render('pages/about',{'title': title});
 });
 
+//contact URL
+app.get('/contact',(req,res)=>{
+    let title = "Contact Us";
+    res.render('pages/contact',{'title': title});
+});
+
+//gallery URL
+app.get('/gallery',(req,res)=>{
+    let title = "Gallery";
+    res.render('pages/gallery',{'title': title});
+});
+
+//location URL
+app.get('/location',(req,res)=>{
+    let title = "Location";
+    res.render('pages/location',{'title': title});
+});
+
+//location URL
+app.get('/experiences',(req,res)=>{
+    let title = "Experiences";
+    res.render('pages/experiences',{'title': title});
+});
+
 //Set server to listen for requests
 app.listen(port, () => {
   console.log(`Server running at port: ${port}`);
